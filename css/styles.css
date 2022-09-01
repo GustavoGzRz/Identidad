@@ -1,53 +1,46 @@
-.contenedor{
-    width: 100%;
-    margin: auto;
-    color: rgb(255, 255, 255);
-    font-family: monospace;
-    background-color: rgb(55, 55, 55);
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-.contenedor, a{
-    color: rgb(255, 255, 255);
-    font-family: monospace;
-    font-size: large;
-    text-align:start;
-    justify-content: center;
-    align-content: center;
-}
-.ACD{
-    background-color: rgb(218, 227, 203);
-    width: 100%;
-    height: 500px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.acercade{
-    border: 10px;
-    border-color: rgb(85, 95, 105);
-    font-size: large;
-    width: 650px;
-    padding:02em;
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap'); /* Importa fuentes utilizadas */
 
-} 
-.ProyC{
-    border: 10px;
-    border-color: rgb(75, 85, 95);
+
+.mainText{ /* Estilo para subtitulo "GG.dev" */
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+    color: white;
+}
+.seccion1{ /* Estilo para el texto de la sección 1 */
+    color: white;
     font-size: large;
-    width: 650px;
-    padding:02em;
-} 
-.ProyP{
-    border: 10px;
-    border-color: rgb(65, 75, 85);
+}
+.seccion2{ /* Estilo para el texto de la sección 2 */
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+}
+.foot{ /* Estilo para el texto de la sección footer */
+    font-size: larger;
+    color: white;
+}
+.body{ /* Estilo general para la clase body */
+    background-color: #0D1721;
+    color: white;
+}
+.acercaDeText{ /* Estilo para el tamaño de letra del texto introductorio  */
+    font-size: x-large;
+}
+.card-text{ /* Estilo para el texto que acompaña las imagenes en la sección de Proyectos destacados */
     font-size: large;
-    width: 650px;
-    padding:02em;
-} 
-footer{
-    text-align: center;
+    color: aqua;
+}
+.subtitulo{ /* Estilo para palabras dentro del texto descriptivo de Acerca de*/
+    color: aqua;
+}
+.namegg{ /* Estilo para palabras dentro del texto descriptivo de Acerca de*/
+    color: aqua;
+}
+#contactoid{ /* Estilo para subtítulos*/
+    color: yellow;
+}
+#serviciosid{ /* Estilo para subtítulos*/
+    color: rgb(0, 255, 55);
+}
+#proyectosid{ /* Estilo para subtítulos*/
+    color: rgb(255, 0, 102);
 }
