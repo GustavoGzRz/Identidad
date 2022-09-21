@@ -1,206 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <title>GG.dev</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <title>GG.dev</title>
 </head>
+
 <body class="body">
-<nav class="navbar navbar-expand-sm p-4" id="nav1">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="container-fluid">
-            <img src="./images/logo3.png" alt="" width="50">
-            <a class="navbar-brand p-2" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"></button>
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                <a class="nav-link" href="index.html"><button type="text" class="btn btn-outline-light">Inicio </button></a>
-                <a class="nav-link" href="#acercaid"><button type="text" class="btn btn-outline-info">Acerca de</button></a>
-                <a class="nav-link" href="#proyectosid"><button type="text" class="btn btn-outline-danger">Proyectos</button></a>
-                <a class="nav-link" href="#serviciosid"><button type="text" class="btn btn-outline-success">Servicios</button></a>
-                <a class="nav-link" href="#contactoid"><button type="text" class="btn btn-outline-warning">Contactos</button></a>
-                
-                </div>
-            </div>
-        </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img class="logoHead" src="./images/logo4.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><h5>Inicio</h5><span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#acercaid"><h5>Acerca de</h5></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectosid"><h5>Proyectos</h5></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactoid"><h5>Contacto</h5></a>
+          </li>
+        </ul>
+      </div>
     </nav>
+  </header>
 
-
-<!-- Slider -->
-<!-- <main class="container container-fluid"> -->
-<div id="maincarouse carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <!-- Slider -->
+<div class="carrusel pb-5">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
     </ol>
-    <div class="carousel-inner mx-auto">
-        <div class="carousel-item active" data-bs-interval="6000"> <!-- data-bs-interval es la velocidad en ms a la que cambia la imagen del carrusel -->
-            <img src="./images/codingblur.jpg" class="d-block w-100" alt="slide1" width="900" height="600">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/codingblur.jpg" class="d-block w-100 slide" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Desarrollo</h1>
+          <p>Desarrollamos el código frontend y backend para tu proyecto</p>
         </div>
-        <div class="carousel-item" >
-            <img src="./images/disenoblur.jpg" class="d-block w-100" alt="slide2" width="900" height="600">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/disenoblur.jpg" class="d-block w-100 slide" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Diseño</h1>
+          <p>Plasmámos tu idea acorde a los requerimientos solicitados</p>
         </div>
-        <div class="carousel-item" >
-            <img src="./images/suppblur.png" class="d-block w-100" alt="slide3" width="900" height="600">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/suppblur.png" class="d-block w-100 slide" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Soporte</h1>
+          <p>¿Necesitas ayuda? Te ayudamos a resolver los problemas relacionados con el funcionamiento de tu sitio</p>
         </div>
+      </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Siguiente</span>
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Anterior</span>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
     </button>
+  </div>
 </div>
 
-<!-- Primera sección Intro-->
-<div class="container">
-<section class="seccion1 w-100 mx-auto text-center">
-    <div class="container1">
-        <h1 class="p-4 border-top border-3">Te ayudamos a crear tu identidad en internet <span>Desarrollo web</span></h1>
-        <p class="mainText"><span class="namegg">GG.dev <br> </span>Con nosotros obtendrás la ayuda necesaria para consolidar tu presencia en internet,
-            expande tus ideas, nosotros te ayudamos.</p>
-            <hr>
-    </div>
-</section>
-</div>
-<!-- Segunda sección 'Acerca de' -->
-<div class="container container-fluid">
+  <!-- Primera sección Intro-->
+  <div class="container">
+    <section class="seccion1 w-100 mx-auto text-center">
+      <div class="container1">
+        <h1 class="p-4 border-top border-3">Te ayudamos a crear tu identidad en internet <br><span class="temp">
+            Desarrollo web</span></h1>
+        <p class="mainText"><span class="namegg">GG.dev <br> </span>Con nosotros obtendrás la ayuda necesaria para
+          consolidar tu presencia en internet,
+          expande tus ideas, nosotros te ayudamos.</p>
+        <hr>
+      </div>
+    </section>
+  </div>
+  <!-- Segunda sección 'Acerca de' -->
+  <div class="container container-fluid">
     <h1 class="subtitulo" id="acercaid">Acerca de</h1>
     <div class="row">
-<!--     <sction class="seccion2 text-left"> -->
-        <div class="col-md-3 p-3">
-            <img src="./images/yo.png" alt="" width="250" class="yo p-5">
-        </div>
-        <hr>
-        <div class="col-md-9 container-fluid p-2"><p class="acercaDeText text-left p-5" ><span>
-            <br> <span class="namegg">¡Hola!</span>  Mi nombre es <span class="namegg">Gustavo</span>, soy un desarrollador Fullstack Jr en constante crecimiento en
-            las áreas de diseño y desarrollo web. <br><br> 
-            Actualmente me desempeño de forma independiente (freelancer) en el área, <span class="namegg">ayudando</span> a diferentes 
+      <!--     <sction class="seccion2 text-left"> -->
+      <div class="col-md-3 p-2 m-auto">
+        <img src="./images/yo.png" alt="" width="250" class="m-auto ">
+      </div>
+      <hr>
+      <div class="col-md-9 container-fluid p-2">
+        <p class="acercaDeText text-left p-5"><span>
+            <br> <span class="namegg">¡Hola!</span> Mi nombre es <span class="namegg">Gustavo</span>, soy un
+            desarrollador Fullstack Jr en constante crecimiento en
+            las áreas de diseño y desarrollo web. <br><br>
+            Actualmente me desempeño de forma independiente (freelancer) en el área, <span
+              class="namegg">ayudando</span> a diferentes
             empresas a <span class="namegg">consolidar su presencia</span> en internet. <br>
-            <br> Creo firmemente que, <span class="namegg">toda ídea y sueño se pueden realizar</span>toda ídea y sueño se pueden realizar. 
-        </span></p>
-        </div>
-<!--     </sction> -->
+            <br> Creo firmemente que, <span class="namegg">toda ídea y sueño se pueden realizar.</span>
+          </span></p>
+      </div>
+      <!--     </section> -->
     </div>
-</div>
-<!-- Tercera sección 'Proyectos destacados' -->
-<div class="container"> 
+  </div>
+  <!-- Tercera sección 'Proyectos destacados' -->
+  <div class="container">
     <h1 class="subtitulo" id="proyectosid">Proyectos destacados</h1><br>
     <sction class="seccion3">
-        <div class="row p-5"> <!-- Abre row en sección 3 -->
-        <div class="col" style="width: 18rem;"> <!-- Card 1 -->
-            <img class="col" src="./images/proy1.jpg" alt="...">
-            <div class="card-body">
-                <p class="card-text"><h1>Techno Repair</h1>Es un proyecto desarrollado para una tienda de 
-                venta y reparación de equipo electrónico.</p>
-            </div>                                <!-- Card 1 -->
+      <div class="row p-5">
+        <!-- Abre row en sección 3 -->
+        <div class="col" style="width: 18rem;">
+          <!-- Card 1 -->
+          <img class="col" src="./images/proy1.jpg" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+            <h1>Techno Repair</h1>Es un proyecto desarrollado para una tienda de
+            venta y reparación de equipo electrónico.</p>
+          </div> <!-- Card 1 -->
         </div>
-        <div class="col" style="width: 18rem;"> <!-- Card 2 -->
-            <img src="./images/proy2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text"><h1>Elise Bike</h1>Es una página web de venta de productos especializados
-                    para cilcistas entusiastas y profesionales.</p>
-            </div>                                <!-- Card 2 -->
+        <div class="col" style="width: 18rem;">
+          <!-- Card 2 -->
+          <img src="./images/proy2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+            <h1>Elise Bike</h1>Es una página web de venta de productos especializados
+            para cilcistas entusiastas y profesionales.</p>
+          </div> <!-- Card 2 -->
         </div>
-        <div class="col" style="width: 18rem;"> <!-- Card 3 -->
-            <img src="./images/proy3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text"><h1>Hard Tech</h1>Se trata de un e-commerce desarrollado para la venta
-                    de equipo de cómputo, tanto harware como software.</p>
-            </div>
-        </div>                                <!-- Card 3 -->
-        </div> <!-- Cierra row en sección 3 -->
+        <div class="col" style="width: 18rem;">
+          <!-- Card 3 -->
+          <img src="./images/proy3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+            <h1>Hard Tech</h1>Se trata de un e-commerce desarrollado para la venta
+            de equipo de cómputo, tanto harware como software.</p>
+          </div>
+        </div> <!-- Card 3 -->
+      </div> <!-- Cierra row en sección 3 -->
     </sction>
-</div> <!-- Cierra conteiner de seccion 3 -->
-<!-- Cuarta sección 'Servicios' -->
-<div class="container"> 
+  </div> <!-- Cierra conteiner de seccion 3 -->
+  <!-- Cuarta sección 'Servicios' -->
+  <div class="container">
     <h1 class="subtitulo" id="serviciosid">Servicios</h1><br>
     <section>
-        <div class="row text-center p-5"> <!-- Abre row en sección 3 -->
-            <div class="col" style="width: 10rem;"> <!-- Card 1 -->
-                <img src="./images/diseno.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"><h1>Diseño</h1>Plasmámos tu ídea de forma gráfica
-                    para que puedas visualizar como se vería tu página web, se definen caracteristicas
-                    como tipografía, paleta de colores y de más requerimientos que se soliciten.</p>
-                </div>                                <!-- Card 1 -->
-            </div>
-            <div class="col" style="width: 10rem;"> <!-- Card 2 -->
-                <img src="./images/desarrollo.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"><h1>Desarrollo</h1>Se realiza todo lo relacionado a 
-                    HTML, CSS, JS y Base de datos para crear tu página web y que ésta sea perfectamente
-                    funcional.</p>
-                </div>                                <!-- Card 2 -->
-            </div>
-            <div class="col" style="width: 10rem;"> <!-- Card 3 -->
-                <img src="./images/soporte.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"><h1>Soporte</h1>Brindamos soportea tu página web para siempre
-                    mantener tu página actualizada a tus necesidades y requerimientos.</p>
-                </div>
-            </div>                                  <!-- Card 3 -->
-            </div> <!-- Cierra row en sección 3 -->
+      <div class="row text-center p-5">
+        <!-- Abre row en sección 3 -->
+        <div class="col" style="width: 10rem;">
+          <!-- Card 1 -->
+          <img src="./images/diseno.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+            <h1>Diseño</h1>Plasmámos tu ídea de forma gráfica
+            para que puedas visualizar como se vería tu página web, se definen caracteristicas
+            como tipografía, paleta de colores y de más requerimientos que se soliciten.</p>
+          </div> <!-- Card 1 -->
+        </div>
+        <div class="col" style="width: 10rem;">
+          <!-- Card 2 -->
+          <img src="./images/desarrollo.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+            <h1>Desarrollo</h1>Se realiza todo lo relacionado a
+            HTML, CSS, JS y Base de datos para crear tu página web y que ésta sea perfectamente
+            funcional.</p>
+          </div> <!-- Card 2 -->
+        </div>
+        <div class="col" style="width: 10rem;">
+          <!-- Card 3 -->
+          <img src="./images/soporte.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+            <h1>Soporte</h1>Brindamos soportea tu página web para siempre
+            mantener tu página actualizada a tus necesidades y requerimientos.</p>
+          </div>
+        </div> <!-- Card 3 -->
+      </div> <!-- Cierra row en sección 3 -->
     </section>
-</div> <!-- Cierra conteiner de seccion 4 -->
-<!-- Quinta sección 'Contacto' -->
-<div class="container">
-    <h1 class="subtitulo" id="contactoid">Contacto</h1><br>
+  </div> <!-- Cierra conteiner de seccion 4 -->
+<hr>
+  <div class="container">
+    <div class="card text-center" id="cardCotizaAll">
+      <div class="card-header" id="cardCotizaHead">
+        <h2>¿Te interesa colaborar conmigo?</h2>
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Realiza una cotización sin consto alguno</h3>
+        <h4 class="card-text"><img src="https://cdn-icons-png.flaticon.com/512/5781/5781237.png" height="250" alt=""></h4>
+        <a href="./pages/cotiza.html" class="btn btn-outline-success m-3">Quiero cotizar</a>
+      </div>
+    </div>
+  </div>
+
+<hr>
+  <!-- Quinta sección 'Contacto' -->
+  <div class="container">
+    <h1 class="subtitulo" id="contactoid">¿Tienes alguna duda? ¡Contáctame!</h1><br>
     <section class="seccion5 p-5">
-        <div class="row"> <!-- Inicia row en sección 5 -->
-            <div class="col"> <!-- Columna para mini formulario -->
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1"><h3>Nombre</h3></label>
-                        <input type="text" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1"><h3>Correo electrónico</h3></label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <h3>Mensaje</h3>
-                    </div>
-                    <textarea class="comentarios" rows="3" cols="60">Escribe aquí tus comentarios</textarea><br><br>
-                    <button type="submit" class="btn btn-outline-warning">Enviar</button>
-                </form>
-            </div> <!-- Cierra columna para mini formulario -->
-            <div class="col text-center"> <!-- Abre columna para redes de contacto -->
-                <div class="contacto p-3">
-                    <h3><img src="./images/github.png" width="50" height="50" alt="" > <br>GitHub</h3><br>
-                    <h3><img src="./images/linkedin.png" width="50" height="50" alt=""> <br>Linkedin</h3><br>           
-                </div>
+      <div class="row">
+        <!-- Inicia row en sección 5 -->
+        <div class="col">
+          <!-- Columna para mini formulario -->
+          <form>
+            <div class="form-group">
+              <label for="exampleInputPassword1">
+                <h3>Nombre</h3>
+              </label>
+              <input type="text" class="form-control" id="userName">
             </div>
-            <div class="col text-center">
-                <div class="contacto p-3">
-                    <h3><img src="./images/instagram.png" width="50" height="50" alt="" class=""> <br>Instagram</h3><br>
-                    <h3><img src="./images/facebook.png" width="50" height="50" alt=""> <br>Instagram         
-                </div>
-            </div> <!-- Cierra columna para redes de contacto -->
-        </div> <!-- Cierra row en sección 5 -->
-        <footer class="foot text-center">
-            <br><br>
-            <p>Esta página es tématica, la información aquí mostrada es ficticia y es utilizada con fines educativos.</p>
-            <p>Aug-2022</p>
-        </footer>
+            <div class="form-group">
+              <label for="exampleInputEmail1">
+                <h3>Correo electrónico</h3>
+              </label>
+              <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
+              <h3>Mensaje</h3>
+            </div>
+            <textarea class="comentarios" rows="3" cols="60" placeholder="Escribe aquí tu mensaje"></textarea><br><br>
+            <button type="submit" class="btn btn-outline-warning" id="btnEnviar">Enviar</button><br><br>
+          </form>
+        </div> <!-- Cierra columna para mini formulario -->
+        <div class="col text-center mx-auto my-auto"><!-- Abre columna para redes de contacto -->
+          <div class="contacto p-3 mx-auto my auto">
+            <h3><a href="https://github.com/GustavoGzRz" rel=""><img src="./images/github.png" width="50" height="50" alt=""></a> <br>GitHub</h3><br>
+            <h3><img src="./images/linkedin.png" width="50" height="50" alt=""> <br>Linkedin</h3><br>
+          </div>
+        </div>
+        <div class="col text-center mx-auto my-auto">
+          <div class="contacto p-3">
+            <h3><img src="./images/instagram.png" width="50" height="50" alt="" class=""> <br>Instagram</h3><br>
+            <h3><img src="./images/facebook.png" width="50" height="50" alt=""> <br>Instagram
+          </div>
+        </div> <!-- Cierra columna para redes de contacto -->
+      </div> <!-- Cierra row en sección 5 -->
     </section>
-</div> <!-- Cierra conteiner de seccion 5 -->
+  </div> <!-- Cierra conteiner de seccion 5 -->
+  <footer class="foot text-center container-fluid w-100">
+    <br>
+    <hr>
+    <p>Esta página es tématica, la información aquí mostrada es ficticia y es utilizada con fines educativos.</p>
+    <p>Aug-2022</p>
+    <br>
+  </footer>
 
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-
-<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>     -->
-
+  <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
